@@ -1,0 +1,32 @@
+.Ic_navbar {
+    width: 100%;
+    overflow: auto;
+    background-color: darkgrey;
+    display: flex;
+}
+
+.Ic_navbar a {
+    text-align: center;
+    padding: 12px;
+    color: darkslateblue;
+    text-decoration: none;
+    font-size: 17px;
+}
+.Ic_navbar a.active {
+    background-color: deepskyblue;
+    color: #000000;
+}
+.Ic_navbar a:hover {
+    background-color: darkslategray;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 500px){
+    .Ic_navbar {
+        position: relative;
+        flex-direction: column;
+    }
+    .Ic_navbar a {
+        text-align: left;
+    }
+}
